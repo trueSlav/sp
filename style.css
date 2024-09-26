@@ -398,7 +398,7 @@
 .about__board>p {
 	font-weight: 500;
 	color: var(--second-text-color, #fff);
-	font-size: 20px;
+	font-size: 19px;
 }
 
 .about__selected-area {
@@ -774,6 +774,7 @@
 		display: none;
 	}
 
+
 	.nav-mobile {
 		position: fixed;
 		top: 20px;
@@ -865,5 +866,11 @@
 
 	.title {
 		font-size: 40px;
+	}
+}
+
+@media (500px <=width <=600px) {
+	.about__board {
+		padding: 10px;
 	}
 }
