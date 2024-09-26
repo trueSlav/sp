@@ -76,7 +76,7 @@ function renderInfoProduct(product) {
 
 					<article>
 					<div class="product__image-wrapper">
-					<img src="src/images/other/${img}" alt="${descr}">
+					<img src="../other/${img}" alt="${descr}">
 					</div>
 					<p class="product__descr">${descr}</p>
 					<h1><a target="_blank" href="/data/catalog/${pdf}">ПРАЙС-ЛИСТ</a></h1>

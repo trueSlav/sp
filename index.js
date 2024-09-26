@@ -62,7 +62,7 @@ function createCard(data) {
 					<li class="product__item" data-product-id="${id}">
 						<a href="/card.html?id=${id}">
 							<div class="product-image-wrapper">
-								<img src="src/images/other/${img}"
+								<img src="../other/${img}"
 									alt="${descr}" class="product__card-image">
 							</div>
 							<p class="product__card-description">${title}</p>
