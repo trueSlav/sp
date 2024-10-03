@@ -6,7 +6,7 @@
 .product {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: min-content
+	grid-template-rows: min-content;
 }
 
 .product__title {
@@ -18,12 +18,12 @@
 	grid-row: 2/3;
 }
 
-.product__list-wrapper>a {
+.product__list-wrapper > a {
 	cursor: pointer;
 	position: relative;
 }
 
-.product__list-wrapper>a::after {
+.product__list-wrapper > a::after {
 	content: '';
 	display: inline-block;
 	position: absolute;
@@ -31,17 +31,16 @@
 	left: 60%;
 	width: 50px;
 	height: 50px;
-	background-image: url('../images/libre-shop-cart.svg');
-	transition: all .3s;
+	background-image: url(../images/libre-shop-cart.svg);
+	transition: all 0.3s;
 }
 
-.product__list-wrapper>a:hover::after {
+.product__list-wrapper > a:hover::after {
 	transform: scale(1.1);
 }
 
 .product__list-wrapper .title:hover {
 	text-decoration: underline;
-	text-underline-offset: 2px;
 	text-underline-offset: 5px;
 	text-decoration-color: var(--accent-color);
 }
@@ -67,7 +66,7 @@
 	left: -20px;
 	border-radius: 50%;
 	border: 1px solid black;
-	transition: all .3s;
+	transition: all 0.3s;
 }
 
 .product__list li:hover::before {

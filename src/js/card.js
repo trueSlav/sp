@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const PRODUCT_INFORMATION_NOT_FOUND = `error, oh no :_(`;
 const ERROR_SERVER = 'error serv';
@@ -10,16 +10,15 @@ getProducts();
 
 async function getProducts() {
 	try {
-		if(!productsData.length) {
+		if (!productsData.length) {
 			const res = await fetch('/data/product.json');
-			if(!res.ok) {
+			if (!res.ok) {
 				throw new Error(res.statusText);
 			}
 			productsData = await res.json();
 		}
 
 		loadProductDetails(productsData);
-		
 	} catch (error) {
 		console.log(`error, oh no :_( = "${error}"`);
 	}
@@ -31,46 +30,42 @@ function getParameterFromURL(parameter) {
 }
 
 function loadProductDetails(data) {
-
 	if (!data || !data.length) {
-			showErrorMessage(ERROR_SERVER)
-			return;
+		showErrorMessage(ERROR_SERVER);
+		return;
 	}
 
 	const productId = Number(getParameterFromURL('id'));
 
 	if (!productId) {
-			showErrorMessage(PRODUCT_INFORMATION_NOT_FOUND)
-			return;
+		showErrorMessage(PRODUCT_INFORMATION_NOT_FOUND);
+		return;
 	}
 
-	const findProduct = data.find(card => card.id === productId);
+	const findProduct = data.find((card) => card.id === productId);
 
-	if(!findProduct) {
-			showErrorMessage(PRODUCT_INFORMATION_NOT_FOUND)
-			return;
+	if (!findProduct) {
+		showErrorMessage(PRODUCT_INFORMATION_NOT_FOUND);
+		return;
 	}
 	renderInfoProduct(findProduct);
 }
 
-
 function renderInfoProduct(product) {
 	const { img, title, pdf, descr, inside } = product;
-	
+
 	let li = '';
-	inside.forEach(element => {
-		li +=
-			`
+	inside.forEach((element) => {
+		li += `
 			<a target="_blank" href="/data/catalog/${pdf}">
 				<li>
 					${element}
 				</li>
 			</a>
-			`
-	})
+			`;
+	});
 
-	const productItem = 
-			`
+	const productItem = `
 			<div class="product">
 					<h2 class="product__title">${title}</h2>
 
@@ -89,6 +84,6 @@ function renderInfoProduct(product) {
 						</ul>
 					</div>
 			</div>
-			`
-			wrapper.insertAdjacentHTML('beforeend', productItem);
+			`;
+	wrapper.insertAdjacentHTML('beforeend', productItem);
 }

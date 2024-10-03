@@ -1,0 +1,18 @@
+:root .theme_dark {
+	--accent-color: #1256e8;
+}
+
+/* .page.theme_dark {
+	--accent-color: #1256e8;
+} */
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--main-color: #fff;
+		--accent-color: #1256e8;
+		--text-color: #000;
+		--second-text-color: #fff;
+		--main-font: ubuntu;
+		--button-shadow: #000;
+	}
+}

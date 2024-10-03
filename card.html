@@ -1,114 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="only light" />
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: light)"
+			content="#ffffff"
+		/>
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: dark)"
+			content="#000000"
+		/>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="color-scheme" content="only light">
-	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
-	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="src/images/logo/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="src/images/logo/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="src/images/logo/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="src/images/logo/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="src/images/logo/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="src/images/logo/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="src/images/logo/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="src/images/logo/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="src/images/logo/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="src/images/logo/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="src/images/logo/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="src/images/logo/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="src/images/logo/favicon-16x16.png"
+		/>
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="src/images/logo/ms-icon-144x144.png"
+		/>
 
-	<link rel="apple-touch-icon" sizes="57x57" href="src/images/logo/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="src/images/logo/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="src/images/logo/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="src/images/logo/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="src/images/logo/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="src/images/logo/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="src/images/logo/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="src/images/logo/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="src/images/logo/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="src/images/logo/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="src/images/logo/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="src/images/logo/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="src/images/logo/favicon-16x16.png">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="src/images/logo/ms-icon-144x144.png">
+		<link rel="icon" href="src/images/logo/favicon.ico" size="any" />
+		<link
+			rel="shortcut icon"
+			href="src/images/logo/favicon.png"
+			type="image/x-icon"
+		/>
 
-	<link rel="icon" href="src/images/logo/favicon.ico" size="any">
-	<link rel="shortcut icon" href="src/images/logo/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="src/fonts/fonts.css" />
+		<link rel="stylesheet" href="src/styles/global.css" />
+		<link rel="stylesheet" href="src/styles/variables.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="src/styles/card.css" />
+		<title>ООО "МПК СТРОЙПЛАТФОРМА"|Краснодар</title>
+		<script src="src/js/card.js" type="module" defer></script>
+	</head>
 
-	<link rel="stylesheet" href="src/fonts/fonts.css">
-	<link rel="stylesheet" href="src/styles/global.css">
-	<link rel="stylesheet" href="src/styles/variables.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="src/styles/card.css">
-	<title>ООО "МПК СТРОЙПЛАТФОРМА"|Краснодар</title>
-	<script src="src/js/card.js" type="module" defer></script>
-</head>
+	<body class="page">
+		<a class="home" href="./index.html">
+			<svg
+				width=" 50"
+				height="50"
+				viewBox="0 0 16 16"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M7.98 1.984l7 6h-2.003v6H9.96V10.97H5.997v3.016H2.982v-6H.979l7-6z"
+				></path>
+			</svg>
+			<p>Домой</p>
+		</a>
+		<div class="wrapper">
+			<header class="header">
+				<address class="header__info content-out">
+					<p>ООО "МПК СТРОЙПЛАТФОРМА"</p>
+					<p class="adres">Центральный офис ул. Весенняя 22 офис 43</p>
+					<p>Почта: <a href="mailto:mpk.sp@bk.ru">mpk.sp@bk.ru</a></p>
+				</address>
 
-<body class="page">
-	<a class="home" href="./index.html">
-		<svg width=" 50" height="50" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-			<path fill-rule="evenodd" clip-rule="evenodd"
-				d="M7.98 1.984l7 6h-2.003v6H9.96V10.97H5.997v3.016H2.982v-6H.979l7-6z"></path>
-		</svg>
-		<p>Домой</p>
-	</a>
-	<div class="wrapper">
+				<section class="header__section">
+					<div class="header-section-wrapper content-out">
+						<article class="header__logo">
+							<a href="./index.html"
+								><img
+									src="src/images/logo-two.jpg"
+									alt="логотип компании Строй Платформа"
+							/></a>
+						</article>
 
-		<header class="header">
-			<address class="header__info content-out">
-				<p>ООО "МПК СТРОЙПЛАТФОРМА"</p>
-				<p class="adres">Центральный офис ул. Весенняя 22 офис 43</p>
-				<p>Почта: <a href="mailto:mpk.sp@bk.ru">mpk.sp@bk.ru</a> </p>
-			</address>
+						<nav class="nav header__nav">
+							<ul class="nav__list">
+								<li class="nav__item active-list-item">
+									<a href="./index.html">Главная</a>
+								</li>
+								<li class="nav__item">
+									<a href="./index.html#about">О компании</a>
+								</li>
+								<li class="nav__item">
+									<a href="./index.html#product">Услуги</a>
+								</li>
+								<li class="nav__item">
+									<a href="./index.html#contacts">Контакты</a>
+								</li>
+							</ul>
+						</nav>
 
-			<section class="header__section">
-				<div class="header-section-wrapper content-out">
-					<article class="header__logo">
-						<a href="./index.html"><img src="src/images/logo-two.jpg" alt="логотип компании Строй Платформа"></a>
-					</article>
+						<article class="contacts header__contacts">
+							<div class="contacts__phone-logo">
+								<img
+									src="src/images/header-phone.png"
+									alt="изображение телефона свяжитесь с нами"
+								/>
+							</div>
+							<p class="contacts__block">
+								<span>Позвонить нам</span>
+								<a href="tel:+79180453833" class="contacts__phone"
+									>+7 918-045-38-33</a
+								>
+							</p>
+						</article>
+					</div>
+				</section>
+			</header>
 
-					<nav class="nav header__nav">
-						<ul class="nav__list">
-							<li class="nav__item active-list-item"><a href="./index.html">Главная</a></li>
-							<li class="nav__item"><a href="./index.html#about">О компании</a></li>
-							<li class="nav__item"><a href="./index.html#product">Услуги</a></li>
-							<li class="nav__item"><a href="./index.html#contacts">Контакты</a></li>
-						</ul>
-					</nav>
-
-					<article class="contacts header__contacts">
-						<div class="contacts__phone-logo">
-							<img src="src/images/header-phone.png" alt="изображение телефона свяжитесь с нами">
-						</div>
-						<p class="contacts__block">
-							<span>Позвонить нам</span>
-							<a href="tel:+79180453833" class="contacts__phone">+7 918-045-38-33</a>
-						</p>
-					</article>
+			<h1 class="title card__title"><span>Информация</span> о товаре</h1>
+		</div>
+		<footer class="footer content-out">
+			<article class="footer__logo logo">
+				<img
+					src="src/images/logo-one.jpg"
+					alt="логотип компании Строй Платформа"
+				/>
+			</article>
+			<nav class="nav footer__nav">
+				<ul class="nav__list">
+					<li class="nav__item">Главная</li>
+					<li class="nav__item">О компании</li>
+					<li class="nav__item">Услуги</li>
+					<li class="nav__item">Обьекты</li>
+					<li class="nav__item">Контакты</li>
+				</ul>
+			</nav>
+			<article class="contacts footer__contacts">
+				<div class="contacts__phone-logo">
+					<img
+						src="src/images/header-phone.png"
+						alt="изображение телефона свяжитесь с нами"
+					/>
 				</div>
-			</section>
-		</header>
-
-		<h1 class="title card__title"><span>Информация</span> о товаре </h1>
-
-	</div>
-	<footer class="footer content-out">
-		<article class="footer__logo logo">
-			<img src="src/images/logo-one.jpg" alt="логотип компании Строй Платформа">
-		</article>
-		<nav class="nav footer__nav">
-			<ul class="nav__list">
-				<li class="nav__item">Главная</li>
-				<li class="nav__item">О компании</li>
-				<li class="nav__item">Услуги</li>
-				<li class="nav__item">Обьекты</li>
-				<li class="nav__item">Контакты</li>
-			</ul>
-		</nav>
-		<article class="contacts footer__contacts">
-			<div class="contacts__phone-logo">
-				<img src="src/images/header-phone.png" alt="изображение телефона свяжитесь с нами">
-			</div>
-			<p class="contacts__block">
-				<span>Позвонить нам</span>
-				<a href="tel:+79180453833" class="contacts__phone">+7 918-045-38-33</a>
-			</p>
-		</article>
-	</footer>
-
-</body>
-
+				<p class="contacts__block">
+					<span>Позвонить нам</span>
+					<a href="tel:+79180453833" class="contacts__phone"
+						>+7 918-045-38-33</a
+					>
+				</p>
+			</article>
+		</footer>
+	</body>
 </html>
